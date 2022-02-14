@@ -90,7 +90,7 @@ postagePrice :: Integer -> Integer
 postagePrice x
     | x <= 500 = 250
     | x <= 5000 = 300+x
-    | x > 5000 = 6000
+    | otherwise = 6000
 
 ------------------------------------------------------------------------------
 -- Ex 8: define a function isZero that returns True if it is given an
@@ -142,4 +142,4 @@ power n k
 ilog3 :: Integer -> Integer
 ilog3 x
     | x == 0 = 0
-    | x > 0 = 1 + ilog3(div x 3) 
+    | otherwise = 1 + ilog3(div x 3) 

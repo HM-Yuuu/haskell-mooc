@@ -4,3 +4,7 @@
 score.json
 
 /.history
+
+#vscode
+.vscode
+*.code-workspace
